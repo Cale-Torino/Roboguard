@@ -18,14 +18,16 @@ My only issue is the high price for one unit.
 
 I was able to determine the signal typs sent from the Roboguard to the HQ device and have made a simple list below.
 
-- 433.92Mhz AM frequency
-- ASK (amplitude shift keying)
-- Manchester NRZ (non return to zero)
+- Protocol
+    - 433.92Mhz AM frequency
+    - ASK (amplitude shift keying)
+    - Manchester NRZ (non return to zero)
 
-- alarm signal
-- learn/tamper share same signal
-- Battery ok signal
-- Battery low signal
+- Signals
+    - alarm signal
+    - learn/tamper share same signal
+    - Battery ok signal
+    - Battery low signal
 
 # Comments
 
