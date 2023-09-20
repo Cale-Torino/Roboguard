@@ -26,14 +26,15 @@ I was able to determine the signal typs sent from the Roboguard to the HQ device
 - Signals
     - alarm signal
     - learn/tamper share same signal
-    - Battery ok signal
-    - Battery low signal
+    - Heartbeat ping signal [1x every +-15min]
 
 # Comments
 
-My devices send pings every 15 minutes containing the battery ok signal.
+My devices send pings every 15 minutes containing the heartbeat ping signal.
 
-After 1 hour it will trigger the status light if the signal is low or the battery is low (below 60%)
+After 1 hour it will trigger the status light if the signal is bad or a device has not sent a ping for more than 15 minutes.
+
+If the battery is low then a constant alarm signal is sent once the device has been triggered in this state.
 
 While testing I was able to simulate a low battery trigger every 5 seconds from 4.5v downwards.
 
